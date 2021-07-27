@@ -1,0 +1,38 @@
+footer{
+  background-color:#242222;
+  opacity:0.7;
+  left: 0;
+  font-family: Didot, serif;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  padding:0.7rem;
+  height: 100px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.63);
+  text-align: center;
+}
+
+footer> .social-icons > .social-icon-link{
+ margin: 0 1rem 0 1rem; 
+ font-size: 30px;
+ color: rgba(255, 255, 255, 0.63);
+}
+
+@media(max-width:1100px)
+{
+  footer{
+    position:relative;
+    bottom:0;
+  }
+}
+
+
+@media(max-width:600px)
+{
+  footer{
+    position:sticky;
+    bottom:0;
+    opacity:1;
+  }
+}
