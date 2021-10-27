@@ -26,7 +26,7 @@ function Navbar() {
   // window.addEventListener("resize", showButton);
 
   const changeBackground = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 30) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -35,8 +35,11 @@ function Navbar() {
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <nav className={navbar ? "navbar active" : "navbar"}>
-      <div className="navbar-container">
+    <nav 
+    className={navbar ? "navbar active" : "navbar"}>
+      <div className="navbar-container"
+      
+      >
         <NavLink
           to="/"
           className="navbar-logo active"
@@ -45,8 +48,7 @@ function Navbar() {
           onClick={closeMobileMenu}
         >
           &nbsp;
-          {/* <img src = "/images/my_logo.png" style={{height:"30px",borderRadius:"50%", width:"30px"}} alt="profile logo"/> */}
-          &nbsp; AC
+          <img src = "/images/logo_trans.png" style={{height:"75px",borderRadius:"50%", width:"80px"}} alt="profile logo"/>
         </NavLink>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -74,29 +76,7 @@ function Navbar() {
               About
             </NavLink>
           </li>
-
-          <li className="nav-item">
-            <NavLink
-              exact
-              to="/academics"
-              className="nav-links"
-              activeClassName="nav-links-active"
-              onClick={closeMobileMenu}
-            >
-              Academics
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              exact
-              to="/achievements"
-              className="nav-links"
-              activeClassName="nav-links-active"
-              onClick={closeMobileMenu}
-            >
-              Achievements
-            </NavLink>
-          </li>
+          
           <li className="nav-item">
             <NavLink
               exact
@@ -108,6 +88,29 @@ function Navbar() {
               Experience
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/tools"
+              className="nav-links"
+              activeClassName="nav-links-active"
+              onClick={closeMobileMenu}
+            >
+              MyTools
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/academics"
+              className="nav-links"
+              activeClassName="nav-links-active"
+              onClick={closeMobileMenu}
+            >
+              Academics
+            </NavLink>
+          </li>
+
           <li className="nav-item">
             <NavLink
               exact
@@ -127,32 +130,30 @@ function Navbar() {
               activeClassName="nav-links-active"
               onClick={closeMobileMenu}
             >
-              Hire Me
+              HireMe
             </NavLink>
           </li>
           <li className="nav-item">
-            <a
-              href="https://abhiraj3112000.medium.com/"
-              rel="noopener noreferrer"
-              target="_blank"
+            <NavLink
+              exact
+              to="/achievements"
               className="nav-links"
               activeClassName="nav-links-active"
               onClick={closeMobileMenu}
             >
-              Blogs
-            </a>
+              Achievements
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a
-              href="https://www.wattpad.com/user/chat_abhiraj"
-              rel="noopener noreferrer"
-              target="_blank"
+            <NavLink
+              exact
+              to="/hobbies"
               className="nav-links"
               activeClassName="nav-links-active"
               onClick={closeMobileMenu}
             >
-              Poems
-            </a>
+              Hobbies
+            </NavLink>
           </li>
         </ul>
         {/* {button && <Button buttonStyle="btn--outline">SIGN UP</Button>} */}

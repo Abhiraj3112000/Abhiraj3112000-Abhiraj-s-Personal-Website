@@ -1,0 +1,100 @@
+/* Contact.js */
+
+.contact-parent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form > h1 {
+    color: #343536;
+    /* text-shadow: 0 0 3px black, 0 0 5px black; */
+    font-size: 50px;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  .form > input,
+  textarea {
+    padding: 20px;
+    border-radius: 3px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    /* border: none; */
+    background: rgb(197, 192, 192);
+    font-size: 16px;
+    color: rgb(0, 0, 32);
+    outline: none;
+  }
+
+  .form > input:focus,
+  textarea:focus {
+    border: 1px solid rgb(0, 0, 196);
+  }
+
+  .form > input{
+    height: 10%;
+    width: 50%;
+  }
+
+  .form > textarea {
+    height: 30%;
+    width: 50%;
+  }
+  
+  .form > label {
+    padding-bottom: 10px;
+    color: rgb(0, 0, 32);
+    font-weight: bold;
+  }
+  
+  .form > button {
+    padding: 20px;
+    border: none;
+    background-color: rgb(146, 146, 201);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  .form > button:hover {
+    background-color: rgb(0, 0, 196);
+  }
+
+  @media (max-width: 1100px) {
+
+}
+
+@media (max-width: 900px) {
+
+    .form > input{
+        height: 10%;
+        width: 80%;
+      }
+    
+      .form > textarea {
+        height: 30%;
+        width: 80%;
+      } 
+      .form{
+          width: 100%;
+      }
+}
+
+@media (max-width: 600px) {
+    
+}

@@ -7,7 +7,10 @@ import Achievements from './components/pages/Achievements';
 import Contact from "./components/pages/Contact";
 import Experience from "./components/pages/Experience";
 import Hireme from "./components/pages/Hireme";
-import About from "./components/pages/About"
+import About from "./components/pages/About";
+import Footer from "./components/Footer";
+import Hobbies from "./components/pages/Hobbies";
+import Tools from "./components/pages/Tools";
 
 
 function App() {
@@ -22,7 +25,10 @@ function App() {
           <Route path='/contact' component={Contact} />
           <Route path='/hireme' component={Hireme} />
           <Route path='/about' component={About} />
+          <Route path='/hobbies' component={Hobbies} />
+          <Route path='/tools' component={Tools} />
         </Switch>
+        <Footer/>
       </Router>
     </>
   );

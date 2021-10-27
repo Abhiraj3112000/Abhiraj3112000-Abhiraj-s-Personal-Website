@@ -1,16 +1,110 @@
-import React from 'react';
-import '../../App.css';
-import HeroSection from '../HeroSection';
-import Footer from '../Footer';
-import Navbar from '../Navbar';
+import React, { useEffect } from "react";
+import "../../App.css";
+import "./Academics.css";
+import Aos from "aos";
+import Navbar from "../Navbar";
 
 function Academics() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
-    <div className="page">
-      <Navbar/>
-      {/* <HeroSection /> */}
-      <h1>Academics Page</h1>
-      <Footer />
+    <div className="">
+      <Navbar />
+      <div className="container">
+        <table>
+          <tr id="header">
+            <th width="20%">First name</th>
+            <th width="80%">Last name</th>
+          </tr>
+          <tr>
+            <td>John </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>steve </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>simo </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>karim </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>adam </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>keven </td>
+            <td>Doe </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr id="header">
+            <th width="20%">First name</th>
+            <th width="80%">Last name</th>
+          </tr>
+          <tr>
+            <td>John </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>steve </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>simo </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>karim </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>adam </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>keven </td>
+            <td>Doe </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr id="header">
+            <th width="20%">First name</th>
+            <th width="80%">Last name</th>
+          </tr>
+          <tr>
+            <td>John </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>steve </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>simo </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>karim </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>adam </td>
+            <td>Doe </td>
+          </tr>
+          <tr>
+            <td>keven </td>
+            <td>Doe </td>
+          </tr>
+        </table>
+      </div>
     </div>
   );
 }

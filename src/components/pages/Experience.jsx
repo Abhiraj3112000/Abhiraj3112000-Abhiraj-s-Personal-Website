@@ -1,16 +1,23 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
-import Footer from '../Footer';
+import "./Experience.css"
 import Navbar from '../Navbar';
 
 function Experience() {
   return (
-    <div className="page">
+    <div className="page" >
       <Navbar/>
-      {/* <HeroSection /> */}
-      <h1>Experience Page</h1>
-      <Footer />
+      <div className="container">
+        <div className="image">
+          <img src="https://www.coox.in/longLogo.png"/>
+        </div>
+        <div className="image">
+          <img src="/images/nit_dgp_logo.png"/>
+        </div>
+        <div className="image">
+          <img src="https://avatars.githubusercontent.com/u/84704958?s=200&v=4"/>
+        </div>
+      </div>
     </div>
   );
 }

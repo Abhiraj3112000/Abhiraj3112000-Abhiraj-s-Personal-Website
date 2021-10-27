@@ -1,38 +1,74 @@
 footer{
-  background-color:#242222;
-  opacity:0.7;
-  left: 0;
-  font-family: Didot, serif;
-  position:relative;
-  bottom: 0;
-  width: 100%;
-  padding:0.7rem;
-  height: 100px;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.63);
-  text-align: center;
+  padding:1rem;
+  background: #2423239c
 }
-
-footer> .social-icons > .social-icon-link{
- margin: 0 1rem 0 1rem; 
- font-size: 30px;
- color: rgba(255, 255, 255, 0.63);
+footer a {
+  text-decoration: none;
+  color: #eee;
 }
-
-@media(max-width:1100px)
-{
-  footer{
-    position:relative;
-    bottom:0;
+footer a:hover {
+  text-decoration: underline;
+}
+.container {
+  flex: 1;
+}
+/* Footer social */
+.ft-social {
+  padding: 0;
+}
+.ft-social-list {
+  margin: 0 auto;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+#main-icon {
+  margin: 0 2rem;
+  transform: translate(0px, 0px) rotateZ(0deg) scale(170%, 170%);
+  opacity: 0.6;
+  transition-duration: 0.5s;
+  animation-name: none;
+}
+#main-icon:hover {
+  opacity: 1;
+  animation: logoani 1s ease 0s 1;
+}
+@keyframes logoani {
+  0%{
+      transform: translate(0px, 0px) rotateZ(0deg) scale(170%, 170%);
+  }
+  20%{
+      transform: translate(0px, 0px) rotateZ(10deg) scale(170%, 170%);
+  }
+  40%{
+      transform: translate(0px, 0px) rotateZ(350deg) scale(270%, 270%);
+  }
+  50%{
+      transform: translate(0px, 0px) rotateZ(350deg) scale(270%, 270%);
+  }
+  60%{
+      transform: translate(0px, 0px) rotateZ(370deg) scale(230%, 230%);
+  }
+  70%{
+      transform: translate(0px, 0px) rotateZ(355deg) scale(200%, 200%);
+  }
+  80%{
+      transform: translate(0px, 0px) rotateZ(365deg) scale(190%, 190%);
+  }
+  90%{
+      transform: translate(0px, 0px) rotateZ(357deg) scale(180%, 180%);
+  }
+  95%{
+      transform: translate(0px, 0px) rotateZ(362deg) scale(170%, 170%);
+  }
+  100%{
+      transform: translate(0px, 0px) rotateZ(360deg) scale(170%, 170%);
   }
 }
-
-
-@media(max-width:600px)
-{
-  footer{
-    position:sticky;
-    bottom:0;
-    opacity:1;
-  }
+/* Footer legal */
+.ft-legal {
+  padding: 0rem;
+}
+#ft-p-copy {
+  font-size: 1rem;
 }

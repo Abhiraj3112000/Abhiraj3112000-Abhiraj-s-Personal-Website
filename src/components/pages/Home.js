@@ -1,51 +1,123 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../App.css";
-import HeroSection from "../HeroSection";
-import Footer from "../Footer";
-import './Home.css';
+import "./Home.css";
+import { NavLink } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import Typed from "react-typed";
 import Navbar from "../Navbar";
 
 function Home() {
-   return (
-    <center className="home-page" style={{haight:"100vh"}} >
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+  return (
+    <center className="home-page" style={{ haight: "100vh" }}>
       <Navbar />
-      {/* <HeroSection /> */}
-      <h1 style={{color:"white", marginLeft:"5%", marginTop:"30px"}}>Abhiraj Chatterjee</h1>
+
+     <br/>
+      {/* <Typed
+        className="home-typed"
+        style={{
+          color: "#c42756",
+          textShadow: "1px 1px 0px white",
+          // marginLeft: "5%",
+          fontSize: "50px",
+          fontFamily: "'Montserrat', sans-serif",
+          marginTop: "200px",
+        }}
+        strings={[
+          "Abhiraj",
+          "Chatterjee",
+        ]}
+        typeSpeed={70}
+        backSpeed={90}
+        loop
+      /> */}
       <div className="home-parent">
-            <img  src="/images/hello-transparent-2.gif" alt="hello gif" className="home-gif"/>
-        
-          <div className="home-info">
-
-            Hola, I am Abhiraj, a University Student Persuing my 5th semester of Computer Science and Engineering from
-            KIIT, Bbsr. I am a MERN stack Web Developer, an Android developer and a Machine Learning Enthusiast. I 
-            also like competitive coding. Know more about me here.
-          </div>
-          <div className="home-info">
-
-            Hola, I am Abhiraj, a University Student Persuing my 5th semester of Computer Science and Engineering from
-            KIIT, Bbsr. I am a MERN stack Web Developer, an Android developer and a Machine Learning Enthusiast. I 
-            also like competitive coding. Know more about me here.
-          </div>
-          <div className="home-info">
-
-            Hola, I am Abhiraj, a University Student Persuing my 5th semester of Computer Science and Engineering from
-            KIIT, Bbsr. I am a MERN stack Web Developer, an Android developer and a Machine Learning Enthusiast. I 
-            also like competitive coding. Know more about me here.
-          </div>
-          <div className="home-info">
-
-            Hola, I am Abhiraj, a University Student Persuing my 5th semester of Computer Science and Engineering from
-            KIIT, Bbsr. I am a MERN stack Web Developer, an Android developer and a Machine Learning Enthusiast. I 
-            also like competitive coding. Know more about me here.
-          </div>
-          <div className="home-info">
-
-            Hola, I am Abhiraj, a University Student Persuing my 5th semester of Computer Science and Engineering from
-            KIIT, Bbsr. I am a MERN stack Web Developer, an Android developer and a Machine Learning Enthusiast. I 
-            also like competitive coding. Know more about me here.
-          </div>
+        <img
+          data-aos="fade-right"
+          // data-aos-offset="300"
+          // data-aos-easing="ease-in-sine"
+          src="/images/hello-robo.gif"
+          alt="hello gif"
+          className="home-gif"
+        />
+        <div
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          // data-aos-offset="300"
+          // data-aos-easing="ease-in-sine"
+          className="home-info"
+          style={{
+           
+          }}
+        >
+          Hello, I am  <NavLink style={{textDecoration: "none"}} exact to="/about"><span style={{color:"white", fontSize:"2rem"}}>Abhiraj Chatterjee</span></NavLink>, a junior
+          Computer Science student from KIIT, Bbsr. I am a Full stack 
+          Web Developer, an Android developer and a Machine Learning Enthusiast.
+          I also like competitive coding and Poetry. 
+          {/* Know more about me {" "}
+          <NavLink
+            exact
+            to="/about"
+            style={{
+              // textDecoration: "none",
+              textShadow: "none",
+              color: "white",
+              fontFamily: "'Montserrat', sans-serif"
+            }}
+          >
+           here
+          </NavLink>. */}
+        </div>
+        {/* <Link
+         exact
+         to="/experience"
+          className="home-info agile"
+          style={{
+            textShadow: "0 0 3px black, 0 0 5px black",
+            marginLeft: "1%",
+          }}
+        >
+          Projects
+        </Link> */}
+        <a
+          href="https://www.wattpad.com/user/chat_abhiraj"
+          target="_blank"
+          className="home-info agile"
+          style={{
+            textShadow: "0 0 3px black, 0 0 5px black",
+            marginLeft: "1%",
+          }}
+          rel="noreferrer noopener"
+        >
+          Read My Poems
+        </a>
+        <a
+          href="https://abhiraj3112000.medium.com/"
+          target="_blank"
+          className="home-info agile"
+          style={{
+            textShadow: "0 0 3px black, 0 0 5px black",
+            marginLeft: "1%",
+          }}
+          rel="noreferrer noopener"
+        >
+          Read My Blogs
+        </a>
+        {/* <Link
+         exact
+         to="/contact"
+          className="home-info agile"
+          style={{
+            textShadow: "0 0 3px black, 0 0 5px black",
+            marginLeft: "1%",
+          }}
+        >
+          Contact
+        </Link> */}
       </div>
-      <Footer/>
     </center>
   );
 }
