@@ -1,0 +1,24 @@
+#main-card-achie {
+    flex-basis: calc(50% - 2rem); 
+    overflow: hidden;
+    cursor: default;
+    width: 400px;
+    height: 400px;
+    margin: 1rem;
+    box-shadow: 0px 0px 5px rgba(3, 29, 82, 0.2), 5px 5px 10px rgba(3, 29, 82, 0.4);
+}
+#main-card-achie:hover{
+    box-shadow: 0px 0px 5px rgba(3, 29, 82, 0.4), 10px 10px 10px rgba(3, 29, 82, 0.4), 0px 0px 20px rgba(3, 29, 82, 0.4);
+}
+#main-card-text-achie{
+    padding: 0.5rem 1rem;
+    bottom: 0;
+    height: 85px;
+    margin-top: 290px;
+    background-color: rgba(30, 30, 30, 0.7);
+    box-shadow: 0px -5px 8px rgba(30, 30, 30, 0.7);
+    transition-duration: 0.5s;
+    color: #eee;
+    z-index: 5;
+    overflow: hidden;
+}

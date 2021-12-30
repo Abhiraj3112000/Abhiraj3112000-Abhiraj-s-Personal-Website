@@ -9,9 +9,9 @@ function Academics() {
     Aos.init({ duration: 1500 });
   }, []);
   return (
-    <div className="">
+    <>
       <Navbar />
-      <div className="container">
+      <div className="container mt-5">
         <table>
           <tr id="header">
             <th width="20%">First name</th>
@@ -105,7 +105,7 @@ function Academics() {
           </tr>
         </table>
       </div>
-    </div>
+    </>
   );
 }
 
