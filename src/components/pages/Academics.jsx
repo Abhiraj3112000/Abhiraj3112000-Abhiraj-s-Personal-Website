@@ -9,7 +9,7 @@ function Academics() {
     Aos.init({ duration: 1500 });
   }, []);
   return (
-    <div className="">
+    <>
       <Navbar />
       <div className="container">
         <table>
@@ -105,7 +105,7 @@ function Academics() {
           </tr>
         </table>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -58,6 +58,7 @@ const Contact = () => {
 
           {/* <label>Name</label> */}
           <input
+            className="form-control"
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -65,6 +66,7 @@ const Contact = () => {
 
           {/* <label>Email</label> */}
           <input
+            className="form-control"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -72,6 +74,7 @@ const Contact = () => {
 
           {/* <label>Message</label> */}
           <textarea
+            className="form-control"
             placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
