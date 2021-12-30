@@ -11,7 +11,7 @@ function Academics() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="container mt-5">
         <table>
           <tr id="header">
             <th width="20%">First name</th>

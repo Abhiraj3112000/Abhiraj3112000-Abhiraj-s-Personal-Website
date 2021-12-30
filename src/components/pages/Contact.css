@@ -7,8 +7,10 @@
 }
 
 .form {
+    margin: 4rem;
+    margin-bottom: 6rem;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +24,16 @@
     font-family: Montserrat, sans-serif;
     margin-bottom: 30px;
   }
-  
+  .myinput {
+    padding: 0.2rem;
+    width: 50%;
+  }
+  .backgroud2 {
+    color: aliceblue;
+    font-size: 1.3rem;
+    background-color: #343536de;
+    border: none;
+  }
   /* .form > input,
   textarea {
     padding: 20px;

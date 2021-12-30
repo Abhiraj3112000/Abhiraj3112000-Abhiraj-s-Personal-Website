@@ -6,7 +6,7 @@ table {
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
-.container{
+/* .container{
     height:150vh;
     width:70%;
     margin-left: 15%;
@@ -14,7 +14,7 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-}
+} */
 tr {
     transition: all .2s ease-in;
     cursor: pointer;

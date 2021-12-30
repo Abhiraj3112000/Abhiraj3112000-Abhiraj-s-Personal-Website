@@ -46,8 +46,8 @@ function Achievements() {
   return (
     <>
       <Navbar/>
+      <div className="container mt-2" id="Achievements">
       <h1>Achievements Page</h1>
-      <div className="container" id="Achievements">
           {
               achieListView.map((oneSub, idx) => {
                   return <div key={idx}>

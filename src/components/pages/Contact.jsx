@@ -7,7 +7,6 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const [loader, setLoader] = useState(false);
 
   function ValidateEmail(mail) {
@@ -52,41 +51,47 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="contact-parent">
-        <form className="form" onSubmit={handleSubmit}>
-          <h1 className="contact-me">Contact Me</h1>
+      <div className="container">
+        <div className="contact-parent">
+          <form className="form" onSubmit={handleSubmit}>
+            <h1 className="contact-me">Contact Me</h1>
 
-          {/* <label>Name</label> */}
-          <input
-            className="form-control"
-            placeholder="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+            {/* <label>Name</label> */}
+            <div className="row d-flex flex " style={{ width: "90%", margin: "1rem" }}>
+              <input
+                className=" myinput col-6 backgroud2 "
+                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                />
 
-          {/* <label>Email</label> */}
-          <input
-            className="form-control"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+              {/* <label>Email</label> */}
+              <input
+                className=" myinput col-6 backgroud2"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                />
+            </div>
 
-          {/* <label>Message</label> */}
-          <textarea
-            className="form-control"
-            placeholder="Message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
+            {/* <label>Message</label> */}
+            <textarea  style={{ width: "90%" }}
+              className="backgroud2"
+              placeholder="Message"
+              rows={20}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
 
-          <button
-            type="submit"
-            style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
-          >
-            Submit
-          </button>
-        </form>
+            <button
+              className=" btn btn-dark m-2 "
+              type="submit"
+              style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)", fontSize: '1.5rem' }}
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </>
   );
